@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    border: 1px solid green;
+}
+
+html, body{
+    height: 250vh;
+    /*Modificar*/
+}
+
+body {
+    display: grid;
+    grid-template: 4rem 1fr 1fr 1fr 2rem / 1fr;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+article {
+    width: 100px;
+    height: 100px;
+}
+
+/*Module Layouts*/
+
+.mainGridLayout {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.itemStorage > section,
+.openedItemStorage > section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    justify-content: center;
+    justify-items: center;
+    align-content: flex-start;
+    gap: 16px;
+    padding: 16px;
+    border: 0px;
+}
+
+.unitStats > header,
+.settingMenu > header,
+.itemMenu > header,
+.openedItemStorage > header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Classes*/
+.ocuppyAllRows {
+    grid-row: -1 / 1;
+}
+.ocuppyAllColumns {
+    grid-column: -1 / 1;
+}
+.invisible {
+    display: none;
+}
+
+.closeModalBtn {
+    align-self: flex-end;
+    padding: 2px 10px;
+}
+
+.openModalBtn {
+    cursor: pointer;
+}
