@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log-In</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/openModals.js" defer></script>
 </head>
 <body>
-    <dialog>
-        <button type="button" class="closeModalBtn">x</button>
-        <h1>Request password recovery</h1>
-        <form class="ocuppyAll">
-            <input type="email" name="email" placeholder="Enter email...">
-            <button type="submit">Send mail</button>
-        </form>
-        <a href="./pages/">Not registered yet?</a>
-    </dialog>
-
     <main>
-        <section id="container">
-            <h1 class="ocuppyAll">Log-In</h1>
+        <dialog>
             <form class="ocuppyAll">
+                <button type="button" class="closeModalBtn">x</button>
+                <h1>Request password recovery</h1>
+                <input type="email" name="email" placeholder="Enter email...">
+                <button type="submit">Send mail</button>
+                <a href="./pages/sing_up.html">Not registered yet?</a>
+            </form>
+        </dialog>
+
+        <section id="container">
+            <form class="ocuppyAll">
+                <h1>Log-In</h1>
                 <input type="text" name="username" placeholder="Enter username...">
                 <input type="password" name="password" placeholder="Enter password...">
-                
-                <a>Password has been forgotten?</a>
-                <a href="./pages/sing_up.html">Not registered yet?</a>
+
                 <button type="submit">Log In</button>
+                <span class="openModalBtn">Password has been forgotten?</span>
+                <a href="./pages/sing_up.html">Not registered yet?</a>
+                <a href="./pages/main_page.html">ACAAAAAAAA!!!!!!!!!</a>
             </form>
         </section>
     </main>

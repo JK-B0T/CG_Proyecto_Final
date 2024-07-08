@@ -18,21 +18,25 @@ main {
 
 #container {
     display: grid;
-    grid-template: 3em 1fr 1em / 1fr 1fr;
+    grid-template: 1fr 2em / 1fr 1fr;
     height: 80%;
+    width: 90%;
     justify-items: center;
 }
 
-#container > h1 {
-    font-size: 4em;
+#container > form {
+    width: 90%;
+    height: 100%;
 }
-
-#container input {
-    width: 60%;
+#container > form > h1 {
+    font-size: 6em;
+}
+#container > form > input {
+    width: 100%;
     height: 2em;
     font-size: 2em;
 }
-#container button {
+#container > form > button {
     width: 60%;
     height: 2em;
     font-size: 2em;
@@ -42,13 +46,40 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 16px;
+    justify-content: space-between;
     align-self: start;
 }
 
-/*Classes*/
+/*Dialog*/
 
+dialog {
+    width: 600px;
+    margin: auto
+}
+dialog > form{
+    height: 200px;
+    padding-bottom: 24px;
+}
+
+dialog input, dialog button{
+    font-size: 1.2em;
+}
+
+dialog input {
+    width: 90%;
+}
+
+
+/*Classes*/
 .ocuppyAll {
     grid-column: -1 / 1;
+}
+
+.closeModalBtn {
+    align-self: flex-end;
+    padding: 2px 10px;
+}
+
+.openModalBtn {
+    cursor: pointer;
 }
