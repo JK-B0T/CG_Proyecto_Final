@@ -135,6 +135,28 @@ article,
     cursor: pointer;
 }
 
+.unitStats > section {
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(4, 1fr);
+}
+
+.statsUnit {
+    grid-area: 1 / 2 / 3 / 4;
+}
+.statsTag {
+    
+}
+.statsBar,
+.statsSkills {
+    grid-column: 2 / 5;
+}
+.equipment > img{
+    width: 100%;
+}
+.statsSkills {
+    
+}
+
 /*Modifiers*/
 .ocuppyAllRows {
     grid-row: -1 / 1;
