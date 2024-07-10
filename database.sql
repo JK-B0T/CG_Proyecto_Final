@@ -41,6 +41,7 @@ CREATE TABLE Skills (
 
 CREATE TABLE Units (
     unit_id INT PRIMARY KEY,
+    color VARCHAR(30),
     user_id INT,
     body_item_id INT NOT NULL,
     face_item_id INT,
