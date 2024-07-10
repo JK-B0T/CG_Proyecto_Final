@@ -135,6 +135,9 @@ article,
     cursor: pointer;
 }
 
+.unitStats {
+    overflow: scroll;
+}
 .unitStats > section {
     display: grid;
     grid-template: repeat(7, 1fr) / repeat(4, 1fr);
@@ -142,19 +145,86 @@ article,
 
 .statsUnit {
     grid-area: 1 / 2 / 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .statsTag {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .statsBar,
 .statsSkills {
     grid-column: 2 / 5;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.statsBar {
+    margin-right: 16px;
+}
+.equipment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .equipment > img{
     width: 100%;
 }
+.statsHeadItem {
+    background-color: mediumaquamarine;
+}
+.statsFace {
+    background-color: lightgoldenrodyellow;
+}
+.statsLeftItem {
+    background-color: lightgrey;
+}
+.statsRightItem {
+    background-color: lightgreen;
+}
 .statsSkills {
-    
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: none;
+}
+
+.bodyBar ,
+.faceBar,
+.headItemBar,
+.rightItemBar,
+.leftItemBar,
+.spaceBar {
+    width: 100px;
+    height: 50px;
+}
+.bodyBar {
+    background-color: mediumaquamarine;
+}
+.faceBar {
+    background-color: lightgoldenrodyellow;
+}
+.headItemBar {
+    background-color: lightgrey;
+}
+.rightItemBar {
+    background-color: lightgreen;
+}
+.leftItemBar {
+    background-color: lightcoral;
+}
+.spaceBar {
+    border: 1px solid black;
+}
+
+.surpriseAttack,
+.turtleTactics,
+.heavy {
+    color: white;
+    background-color: darkblue;
+    padding: 4px;
+    cursor: pointer;
 }
 
 /*Modifiers*/
