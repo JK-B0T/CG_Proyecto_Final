@@ -7,7 +7,7 @@ CREATE TABLE Users (
     name VARCHAR(100),
     email VARCHAR(100),
     password VARCHAR(100),
-    money INT(10),
+    money INT(10)
 );
 
 CREATE TABLE Items (
@@ -19,7 +19,7 @@ CREATE TABLE Items (
     hp INT,
     speed INT,
     price INT(10),
-    description TEXT,
+    description TEXT
 );
 
 CREATE TABLE ItemImages (
@@ -36,7 +36,7 @@ CREATE TABLE Skills (
     name VARCHAR(100),
     description TEXT,
     item_id INT,
-    FOREIGN KEY (item_id) REFERENCES Items(item_id),
+    FOREIGN KEY (item_id) REFERENCES Items(item_id)
 );
 
 CREATE TABLE Units (
@@ -52,7 +52,7 @@ CREATE TABLE Units (
     FOREIGN KEY (face_item_id) REFERENCES Items(item_id),
     FOREIGN KEY (hat_item_id) REFERENCES Items(item_id),
     FOREIGN KEY (left_hand_item_id) REFERENCES Items(item_id),
-    FOREIGN KEY (right_hand_item_id) REFERENCES Items(item_id),
+    FOREIGN KEY (right_hand_item_id) REFERENCES Items(item_id)
 );
 
 CREATE TABLE UserItems (
@@ -60,12 +60,12 @@ CREATE TABLE UserItems (
     item_id INT,
     PRIMARY KEY (user_id, item_id),
     FOREIGN KEY (user_id) REFERENCES Users(user_id),
-    FOREIGN KEY (item_id) REFERENCES Items(item_id),
+    FOREIGN KEY (item_id) REFERENCES Items(item_id)
 );
 
 CREATE TABLE Shop (
     shop_id INT PRIMARY KEY,
     name VARCHAR(100),
     item_id INT,
-    FOREIGN key (item_id) REFERENCES Items(item_id),
+    FOREIGN key (item_id) REFERENCES Items(item_id)
 );
