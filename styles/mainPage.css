@@ -52,7 +52,7 @@ article,
 
 .itemStorage,
 .openedItemStorage {
-    overflow: scroll;
+    overflow: auto;
 }
 
 .itemStorage > section,
@@ -65,7 +65,6 @@ article,
     gap: 16px;
     padding: 16px;
     border: 0px;
-    overflow: scroll;
 }
 
 .unitStats > header,
@@ -142,7 +141,7 @@ article,
 }
 
 .unitStats {
-    overflow: scroll;
+    overflow: auto;
 }
 .unitStats > section {
     display: grid;
