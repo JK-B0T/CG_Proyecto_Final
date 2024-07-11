@@ -24,6 +24,12 @@ header {
     align-items: center;
     justify-content: space-around;
 }
+.money {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+}
 
 article,
 #openItemShop,
@@ -140,7 +146,7 @@ article,
 }
 .unitStats > section {
     display: grid;
-    grid-template: repeat(7, 1fr) / repeat(4, 1fr);
+    grid-template: repeat(6, 75px) 1fr / repeat(4, 1fr);
 }
 
 .statsUnit {
@@ -159,6 +165,8 @@ article,
     grid-column: 2 / 5;
     display: flex;
     align-items: center;
+}
+.statsSkills {
     margin-bottom: 16px;
 }
 .statsBar {
@@ -197,7 +205,7 @@ article,
 .leftItemBar,
 .spaceBar {
     width: 100px;
-    height: 50px;
+    height: 35px;
 }
 .bodyBar {
     background-color: mediumaquamarine;
