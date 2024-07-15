@@ -323,20 +323,22 @@ function main() {
 
         if (openSectionsNum === 2) {
             savedSections[2] = sectionArray[1].querySelector("section");
+            let tempClasses;
 
             if (section.id === "section0") {
                 sectionArray[0].querySelector("section").remove();
                 sectionArray[0].appendChild(savedSections[2]);
+                sectionArray[0].classList = sectionArray[1].classList;
             } else if (section.id === "section1") {
                 sectionArray[1].querySelector("section").remove();
             }
 
             sectionArray[1].querySelector("header").remove();
             sectionArray[1].classList.remove("ocuppyAllRows");
-            if (sectionArray[1].classList.contains("openedItemStorage")) {
-                sectionArray[1].classList.replace("openedItemStorage", "itemStorage");
-            } else {
+            if (!sectionArray[1].classList.contains("openedItemStorage")) {
                 sectionArray[1].classList.replace("unitStats", "itemStorage");
+            } else {
+                sectionArray[1].classList.replace("openedItemStorage", "itemStorage");
             }
             sectionArray[1].appendChild(savedSections[0]);
 
