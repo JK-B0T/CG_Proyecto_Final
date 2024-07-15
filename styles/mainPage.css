@@ -148,7 +148,7 @@ article,
     grid-template: repeat(6, 75px) 1fr / repeat(4, 1fr);
 }
 
-.statsUnit {
+.unit {
     grid-area: 1 / 2 / 3 / 4;
     display: flex;
     justify-content: center;
