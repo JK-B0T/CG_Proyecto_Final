@@ -5,7 +5,7 @@ USE user_database;
 CREATE TABLE Users (
     user_id INT PRIMARY KEY,
     name VARCHAR(100),
-    email VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
     password VARCHAR(100),
     money INT(10)
 );
@@ -42,6 +42,8 @@ CREATE TABLE Skills (
 CREATE TABLE Units (
     unit_id INT PRIMARY KEY,
     color VARCHAR(30),
+    level INT (5),
+    exp INT (50),
     user_id INT,
     body_item_id INT NOT NULL,
     face_item_id INT,

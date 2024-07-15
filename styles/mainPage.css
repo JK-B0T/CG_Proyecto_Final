@@ -131,6 +131,7 @@ article,
     width: 100%;
 }
 
+.closeSectionBtn,
 .closeModalBtn {
     align-self: flex-end;
     padding: 2px 10px;
@@ -257,6 +258,9 @@ article,
 header,
 footer {
     background-color: greenyellow;
+}
+section > header {
+    background-color: yellow;
 }
 article {
     background-color: lightsalmon;
