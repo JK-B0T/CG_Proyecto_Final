@@ -131,6 +131,7 @@ article,
     width: 100%;
 }
 
+.closeSectionBtn,
 .closeModalBtn {
     align-self: flex-end;
     padding: 2px 10px;
@@ -148,7 +149,7 @@ article,
     grid-template: repeat(6, 75px) 1fr / repeat(4, 1fr);
 }
 
-.statsUnit {
+.unit {
     grid-area: 1 / 2 / 3 / 4;
     display: flex;
     justify-content: center;
@@ -257,6 +258,9 @@ article,
 body > header,
 footer {
     background-color: greenyellow;
+}
+section > header {
+    background-color: yellow;
 }
 article {
     background-color: lightsalmon;
