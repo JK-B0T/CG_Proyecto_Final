@@ -11,6 +11,7 @@
         if($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             if ($clientPassword == $row["password"]) {
+
                 session_start();
 
                 $_SESSION["username"] = $row["name"];

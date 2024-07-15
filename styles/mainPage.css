@@ -255,7 +255,7 @@ article,
 }
 
 /*style*/
-header,
+body > header,
 footer {
     background-color: greenyellow;
 }
